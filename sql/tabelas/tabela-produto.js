@@ -1,6 +1,6 @@
 const pg = require('../config');
 
-knex.schema.withSchema('public').createTable('produtos', (table) => {
+pg.schema.withSchema('public').createTable('produtos', (table) => {
     table.increments();   // id
     table.string();     // name
     table.string();    // categoria
